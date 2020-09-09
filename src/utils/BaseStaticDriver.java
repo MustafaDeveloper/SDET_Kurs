@@ -14,7 +14,7 @@ public class BaseStaticDriver {
      // direk bu class çağrıldığı anda canlı olması için static blok içine alındı
      static {
          System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true"); // consola yazılan gereksiz bilgileri sessize aldı.
-         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+         System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
          // hangi browserı kullanacağımı ve tarayıcının path ini verdim.
          driver = new ChromeDriver(); // çalıştıracağımız driverı kontrol edecek değişkeni tanımladım.
          driver.manage().window().maximize();
